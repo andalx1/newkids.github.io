@@ -1,0 +1,19 @@
+@media screen and (max-width: 600px){
+
+    .body1{
+        background: #dfdcd9;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 1fr;
+        grid-template-areas: "header"
+                             "main";
+    }
+    .body1{
+        grid-area: header;
+    }
+    .body1{
+        grid-area: main;
+    }
+    fieldset[title=fieldset2] > p + p
+    }

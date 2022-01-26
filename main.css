@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: rgb(214, 45, 45);
+  --accent-color: #6495ED;
+  --color-main: #FAEBD7;
+  --color-active: #bb7c2a;
+  --hcolor: #DEB887;
+  --font-gen-text: helvetica,arial,sans-serif;
+}
+
+body {
+  background: var(--primary-color);
+  width: 50%;
+  margin: auto;
+}
+
+@media screen and (min-width: 440px) {
+  body div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 20% 1fr;
+        grid-template-rows: 20% 1fr;
+        grid-template-areas: "azul"   "rosa";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 1fr;
+        grid-template-columns: 25% 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "azul  rosa";
+  }
+}
+
+body main {
+  background: var(--color-main);
+}
+
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style: none;
+}
+
+body h2 {
+  font-size: 1.2rem;
+  font-family: 'Lora', serif;
+}
+
+article {
+  margin: 4rem;
+  padding: 2rem;
+  background: white;
+  -webkit-box-shadow: 3px 3px 3px #a09f9f;
+          box-shadow: 3px 3px 3px #a09f9f;
+}
+
+article div, article p {
+  font-size: .7rem;
+}
+
+article figure img {
+  padding: 4rem;
+  width: 60%;
+}
+
+article a:visited {
+  color: black;
+}
+
+article a:active {
+  color: #DEB887;
+}
+
+article a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+
+article p a:visited {
+  color: #6495ED;
+}
+
+article p a:active {
+  color: #DEB887;
+}
+
+article p a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: right;
+  padding: 2rem;
+  background: var(--accent-color);
+  color: var(--accent-color);
+}
+
+header h1 a {
+  font-size: 1.4rem;
+  font-family: 'Lora', serif;
+}
+
+header h1 a:hover {
+  text-decoration: underline;
+}
+
+header h1 a:visited {
+  color: var(--color-main);
+}
+
+header h1 a:active {
+  color: var(--hcolor);
+}
+
+header nav li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav li a {
+  font-size: .7rem;
+  line-height: 30px;
+}
+
+header nav li a:hover {
+  text-decoration: underline;
+  color: #c14343;
+}
+
+header nav li a:visited {
+  color: var(--color-main);
+}
+
+header nav li a:active {
+  color: var(--hcolor);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: rgb(214, 45, 45);
+    --accent-color: #6495ED;
+    --color-main: #FAEBD7;
+    --color-active: #bb7c2a;
+    --hcolor: #DEB887;
+    --font-gen-text: helvetica,arial,sans-serif;
+}
+$breakpoints:(
+    sm : 440px,
+    md : 768px,
+    lg : 1024px,
+);
+@mixin media-up($breakpoint) {
+    @media  screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+body{
+    @include media-up(sm){
+        div{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 20% 1fr;
+            grid-template-areas:"azul"  
+                                "rosa";              
+            }
+
+    }
+    @include media-up(md){
+
+    }
+
+    @include media-up(lg){
+        div{
+            display: grid;
+            grid-template-columns: 25% 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:"azul  rosa";
+            }
+    }
+    background: var(--primary-color);
+    width: 50%;
+    margin: auto;
+    main{
+        background: var(--color-main);
+    }
+    a {
+        text-decoration: none;
+    }
+    li {
+        list-style: none;
+    }
+    h2{
+        font-size: 1.2rem;
+        font-family: 'Lora', serif;
+    }
+    
+    }
+
+
+article{
+
+        margin: 4rem;
+        padding: 2rem;
+        background: white;
+        box-shadow: 3px 3px 3px rgb(160, 159, 159);
+        div, p{
+            font-size: .7rem;
+        }
+        figure img{
+            padding: 4rem;
+            width: 60%;
+        }
+        a:visited{
+            color: black;
+        }
+        a:active{
+            color: #DEB887;
+        }
+        a:hover{
+            color: #6495ED;
+            text-decoration: underline;
+        }
+        p a:visited{
+            color:#6495ED;
+        }
+        p a:active{
+            color:#DEB887;
+        }
+        p a:hover{
+            text-decoration: underline;
+        }
+
+    }
+        
+    header{
+        text-align: right;
+        padding: 2rem;
+        background: var(--accent-color);
+        color: var(--accent-color);
+
+        h1{
+            a{
+                font-size: 1.4rem;
+                font-family: 'Lora', serif;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            a:visited{
+                color: var(--color-main);
+            }
+            a:active{
+                color: var(--hcolor);
+            }
+        }
+        nav li{
+            font-family: Arial, Helvetica, sans-serif;
+            a{
+                font-size: .7rem;
+                line-height: 30px;
+            } 
+            a:hover{
+                text-decoration: underline;
+                color: rgb(193, 67, 67);
+            }
+            a:visited{
+                color: var(--color-main);
+            }
+            a:active{
+                color: var(--hcolor);
+            }
+
+        }
+       
+       
+    }
+   
+  
+
+
